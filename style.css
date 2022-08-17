@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf);
+}
+body {
+    background-color: rgb(133, 245, 133);
+    margin: 0px;
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-image: linear-gradient(#82FA64,#5AAD45,#336127);
+    color: white;
+}
+
+header > h1 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin: 0px;
+}
+
+header > p {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    margin: 0px;
+}
+
+nav {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: rgb(10, 255, 10);
+    border-radius: 5px 5px 0px 0px;
+}
+
+main {
+    background-color: white;
+    padding: 0px;
+    min-width: 320px;
+    max-width: 800px;
+    margin: 0px auto 10px auto;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.534);
+}
+
+img {
+    width: 100%;
+}
+
+img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+article {
+    padding: 0px 20px 0px 20px;
+    text-align: justify;
+}
+
+article > h2 {
+    background-image: linear-gradient(to right, rgb(151, 255, 151), white);
+    font-family: 'idroid', Helvetica, sans-serif;
+    color: green;
+}
+
+article > p > a {
+    background-color: green;
+    color: white;
+    text-decoration: overline;
+    padding: 1px;
+}
+
+article > p > a:hover {
+    text-decoration: underline;
+}
+
+article > p {
+    padding: 10px;
+    margin: 0px;
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+
+picture {
+    text-align: center;
+}
+
+aside{
+    background-color: rgb(58, 146, 58);
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+aside > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+section > h1 {
+    padding: 20px;
+    margin: 0px;
+    font-family: 'idroid', Helvetica, sans-serif;
+    color: green;
+}
+
+
+section#curiosidade {
+    background-color: rgb(169, 255, 255);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.432);
+}
+
+section#curiosidade > article > h3 {
+    background-color:rgb(0, 85, 11) ;
+    color: white;
+    padding: 3px;
+}
+
+ul {
+    list-style-type:'\2714';
+    columns: 2;
+}
+
+abbr {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    background-color: green;
+    padding: 3px;
+}
+
+footer > p {
+    color: white;
+    margin: 0px;
+}
